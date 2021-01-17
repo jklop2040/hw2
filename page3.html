@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <title>Unknown Wager</title>
+        <title>Fifty-Gifty</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+        <div class="mt:p-16 p-4">
+            <div class="m-4 p-2 flex bg-green-800 text-white">
+              <h1 class="w-1/2 font-bold"> Fifty-Gifty Strategy </h1>
+                <p class="w-1/2 text-right font-bold"> Log in | <a href="index.html" class="underline">Homepage</a> | <a href="page2.html" class="underline">Partners</a></p>
+            </div>
+        <div class="p-4">
+                <p class="uppercase font-bold text-green-800 text-xl">External Motivation can drive us to achieve unthinkable heights!</p>
+            </div>    
         
-        <h1> Place your bets!</h1>
-        <h2>Reach your goal and your wager goes to that organization</h2>
-        <h3>Miss your goal and it goes to a conflicting cause</h3>
+        <div class="m-4 px-16 md:flex items-center bg-green-100">
+            <div class="md:w-1/2 p-2 space-y-4">
+                <h2 class="font-bold underline text-xl text-center">Make a Goal</h2>
+                <p class="text-center" >Choose from hundreds of pre-created goals.</p>
+                <h2 class="font-bold underline text-xl text-center">Make a Bet</h2>
+                <p class="text-center">Select an organization you support.</p>
+                <h2 class="font-bold underline text-xl text-center">Make a Change</h2>
+                <p class="text-center">Achieve your goal and your gift goes to the selected organization.</a></p>
+                <h2 class="font-bold underline text-xl text-red-700 border text-center">The Catch </h2>
+                <p class="text-center">Miss your goal and your gift goes to a different cause.</a></p> 
+            </div>
+            <div class="md:w-1/2 md:p-16">
+              <table>  <tr>    <th class="text-2xl font-bold underline">Organization</th>    <th class="text-2xl font-bold underline"> Gift</th>  </tr>  
+                <tr>  <td class=> One Hope United <img class=" w-full mx-auto rounded-xl" src="https://onehopeunited.org/wp-content/uploads/2015/10/one-hope-united-child-care-busy-bee.jpg"> 
+                    </td>    <td class="text-center">$20</td>  </tr>  
+                <tr>  <td> ALS Association <img class=" w-full mx-auto rounded-xl" src="https://i.ytimg.com/vi/Ibb80gFdh2w/maxresdefault.jpg">
+                    </td>    <td class="text-center">$20</td>  </tr></table>
+            </div>
+        </div>
+        <h1 class="m-4 my-16 font-bold text-3xl text-center">Ready to Get Started?</h1>
+        <form netlify class="m-4">
+          <label class="block mt-4 font-bold" for="name">Your name?</label>
+          <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-green-500
+          focus:border-green-500" type="text" id="name" name="name">
     
-        <P>Intrinsic Motivation is only half of the equation. <em>Add your missing Extrinsic Motivation here!</em></P>
+          <label class="block mt-4 font-bold" for="email">Your email?</label>
+          <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-green-500
+          focus:border-green-500" type="text" id="email" name="email">
         
-        <table>  <tr>    <th>Organization</th>    <th>Wager Amount</th>  </tr>  <tr>    <td>One Hope United</td>    <td>$10</td>  </tr>  <tr>    <td>ALS Foundation</td>    <td>$50</td>  </tr></table>
-
-        <p>If you want trainers, vist our <a href="page2.html">Partners</a>.</p>
-
-        <p>Navigate to our <a href="index.html">homepage</a>.</p>
-    
+          <label class="block mt-4 font-bold" for="order">Which organization would you like support?</label>
+          <textarea rows="4" class="p-2 w-full border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-green-500
+          focus:border-green-500" id="order" name="order"></textarea>
+        
+          <button class="block mt-4 text-white bg-green-500 rounded px-4 py-2">Sign up</button>
+        </form>   
     </body>
 </html>
